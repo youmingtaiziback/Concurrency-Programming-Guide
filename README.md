@@ -10,6 +10,10 @@
 
 ## A Note About Terminology
 
+* thread
+* process
+* task
+
 ## See Also
 
 
