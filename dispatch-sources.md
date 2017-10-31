@@ -19,6 +19,13 @@ dispatch source能够连续的处理事件
 
 ## Creating Dispatch Sources
 
+创建dispatch source
+
+* dispatch\_source\_create 
+* 配置dispatch source：添加事物处理器或者timer信息
+* 添加取消逻辑（可选）
+* dispatch\_resume
+
 ## Dispatch Source Examples
 
 ## Canceling a Dispatch Source
