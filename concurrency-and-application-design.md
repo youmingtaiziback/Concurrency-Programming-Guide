@@ -76,5 +76,15 @@ operation objects：添加依赖
 
 ## Concurrency and Other Technologies
 
+#### OpenCL and Concurrency
 
+在GPU里面进行大量数据运算，传入传出数据的成本较高，不是所有场合都适合使用的
+
+[_OpenCL Programming Guide for Mac_](https://developer.apple.com/library/content/documentation/Performance/Conceptual/OpenCL_MacProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008312)
+
+#### When to Use Threads
+
+对实时性要求较高时使用
+
+[_Threading Programming Guide_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
 
