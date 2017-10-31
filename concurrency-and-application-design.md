@@ -66,11 +66,9 @@ operation objects：添加依赖
 
 * 尽量把串行的任务并行
 
-* Identify serial tasks early and do what you can to make them more concurrent
+* 避免使用锁
 
-  Avoid using locks
-
-  Rely on the system frameworks whenever possible
+* 尽量使用系统框架
 
 ## Performance Implications
 
