@@ -125,7 +125,6 @@ GCD线性队列顺序是先进先出
 
 ```
 [NSOperation cancel]
-
 [queue cancelAllOperations]
 ```
 
@@ -133,7 +132,6 @@ GCD线性队列顺序是先进先出
 
 ```
 [NSOperation waitUntilFinished]
-
 [NSOperationQueue waitUntilAllOperationsAreFinished]
 ```
 
