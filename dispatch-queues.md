@@ -23,7 +23,7 @@ dispatch queues的其他特点
 | Technology | Description |
 | :--- | :--- |
 | Dispatch groups | 监听一组block对象执行完毕 |
-| Dispatch semaphores |  |
+| Dispatch semaphores | 只有信号量不可用时，才调用内核 |
 | Dispatch sources |  |
 
 ## Implementing Tasks Using Blocks
