@@ -48,6 +48,8 @@ Operation objects会发出KVO通知
 
 ## Asynchronous Design Techniques
 
+合理选择是否使用并行，不合理的使用并行反而会降低程序的效率
+
 ## Performance Implications
 
 ## Concurrency and Other Technologies
