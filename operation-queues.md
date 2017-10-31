@@ -119,24 +119,22 @@ GCD线性队列顺序是先进先出
 
 #### Executing Operations Manually
 
-```
 手动执行Operation时应该调用start而不是main，因为前者会进行安全检查并发送KVO通知
-```
 
 #### Canceling Operations
 
 ```
-\[NSOperation cancel\]
+[NSOperation cancel]
 
-\[queue cancelAllOperations\]
+[queue cancelAllOperations]
 ```
 
 #### Waiting for Operations to Finish
 
 ```
-\[NSOperation waitUntilFinished\]
+[NSOperation waitUntilFinished]
 
-\[NSOperationQueue waitUntilAllOperationsAreFinished\]
+[NSOperationQueue waitUntilAllOperationsAreFinished]
 ```
 
 #### Suspending and Resuming Queues
