@@ -74,6 +74,30 @@ dispatch\_set\_finalizer\_f
 
 ## Adding Tasks to a Queue
 
+可以同步或异步添加一个或多个任务到队列中
+
+#### Adding a Single Task to a Queue
+
+	无法得知任务何时开始
+
+	在线性队列的任务中调用dispatch\_sync导致死锁的情况
+
+#### Performing a Completion Block When a Task Is Done
+
+#### Performing Loop Iterations Concurrently
+
+dispatch\_apply
+
+#### Performing Tasks on the Main Thread
+
+dispatch\_get\_main\_queue
+
+#### Using Objective-C Objects in Your Tasks
+
+创建多个autorelease pool有助于缓解内存压力
+
+[_Advanced Memory Management Programming Guide_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i)
+
 ## Suspending and Resuming Queues
 
 ## Using Dispatch Semaphores to Regulate the Use of Finite Resources
