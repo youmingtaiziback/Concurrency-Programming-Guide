@@ -42,6 +42,10 @@ dispatch source能监测的系统事件
 
 #### Operation Queues
 
+除了支持先进先出，还支持依赖
+
+Operation objects会发出KVO通知
+
 ## Asynchronous Design Techniques
 
 ## Performance Implications
