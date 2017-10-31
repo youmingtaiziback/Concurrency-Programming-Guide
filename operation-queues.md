@@ -91,6 +91,14 @@ completionBlock
 
 ## Tips for Implementing Operation Objects
 
+#### Managing Memory in Operation Objects
+
+避免基于线程存储
+
+	Keep References to Your Operation Object As Needed
+
+#### Handling Errors and Exceptions
+
 ## Determining an Appropriate Scope for Operation Objects
 
 ## Executing Operations
