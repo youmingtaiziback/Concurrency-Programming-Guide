@@ -10,6 +10,14 @@
 | NSBlockOperation | 所有关联的block都执行完，Operation才算执行完。[_Blocks Programming Topics_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40007502) |
 | NSOperation | 完全控制 |
 
+所有Operation Object都支持的特性
+
+* 基于图的依赖
+* 支持completion block
+* 监听Operation的执行状态
+* 改变线程优先级
+* 支持取消
+
 ## Concurrent Versus Non-concurrent Operations
 
 ## Creating an NSInvocationOperation Object
