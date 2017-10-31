@@ -20,6 +20,10 @@
 
 ## Concurrent Versus Non-concurrent Operations
 
+Operation加入到Queue中，默认是并行的
+
+单独使用Operation，默认是串行的，如果想要并行，需要确保start在其他线程被调用
+
 ## Creating an NSInvocationOperation Object
 
 ## Creating an NSBlockOperation Object
