@@ -28,6 +28,18 @@ dispatch queues的其他特点
 
 ## Implementing Tasks Using Blocks
 
+编译器根据你提供的代码和数据为你生成block
+
+block可以访问作用域内的变量
+
+使用block的注意事项
+
+* 传递纯量数据是安全的，传递作用域内生成的对象的指针或者大的数据结构不安全
+* Queue管理block
+* 合理安排block的任务量
+* 使用Queue而非底层线程传递数据
+* GCD Queue本身提供了autorelease pools，为了更高效的使用内存，建议创建自己的autorelease pools
+
 ## Creating and Managing Dispatch Queues
 
 ## Adding Tasks to a Queue
