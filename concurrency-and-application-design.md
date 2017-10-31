@@ -27,6 +27,19 @@ Dispatch queues其他优势
 
 #### Dispatch Sources
 
+基于C语言异步处理特定类型的系统事件
+
+事件发生时，dispatch source将block添加到dispatch queue中
+
+dispatch source能监测的系统事件
+
+* Timers
+* Signal handlers
+* Descriptor-related events
+* Process-related events
+* Mach port events
+* Custom events that you trigger
+
 #### Operation Queues
 
 ## Asynchronous Design Techniques
