@@ -72,6 +72,8 @@ operation objects：添加依赖
 
 ## Performance Implications
 
+[_Performance Overview_](https://developer.apple.com/library/content/documentation/Performance/Conceptual/PerformanceOverview/Introduction/Introduction.html#//apple_ref/doc/uid/TP40001410)
+
 ## Concurrency and Other Technologies
 
 
