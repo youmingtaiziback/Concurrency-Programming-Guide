@@ -50,35 +50,28 @@ Operation加入到Queue中，默认是并行的
 
 并行Operation需要覆盖的方法
 
-		start\(Required\) 
-
-		main\(Optional\) 
-
-		isExecuting\(Required\) 
-
-		isFinished\(Required\) 
-
-		isConcurrent\(Required\) 
+```
+start(Required) 
+main(Optional) 
+isExecuting(Required) 
+isFinished(Required) 
+isConcurrent(Required) 
+```
 
 被cancel的线程也需要更新finish状态
 
 #### Maintaining KVO Compliance
 
-	isCancelled
-
-	isConcurrent
-
-	isExecuting
-
-	isFinished
-
-	isReady
-
-	dependencies
-
-	queuePriority
-
-	completionBlock
+```
+isCancelled
+isConcurrent
+isExecuting
+isFinished
+isReady
+dependencies
+queuePriority
+completionBlock
+```
 
 ## Customizing the Execution Behavior of an Operation Object
 
