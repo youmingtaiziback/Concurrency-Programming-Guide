@@ -55,7 +55,7 @@ start(Required)
 main(Optional) 
 isExecuting(Required) 
 isFinished(Required) 
-isConcurrent(Required) 
+isConcurrent(Required)
 ```
 
 被cancel的线程也需要更新finish状态
@@ -74,6 +74,20 @@ completionBlock
 ```
 
 ## Customizing the Execution Behavior of an Operation Object
+
+#### Configuring Interoperation Dependencies
+
+可以在不同的Queue中的Operation之间建立以来，但是要避免循环依赖
+
+#### Changing an Operation’s Execution Priority
+
+优先级只限于同一个Queue中的线程
+
+高优先级的线程不一定比低优先级的线程先执行，还要看是否处于ready状态
+
+#### Changing the Underlying Thread Priority
+
+#### Setting Up a Completion Block
 
 ## Tips for Implementing Operation Objects
 
