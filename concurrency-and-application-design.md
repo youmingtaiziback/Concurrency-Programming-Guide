@@ -50,6 +50,26 @@ Operation objects会发出KVO通知
 
 合理选择是否使用并行，不合理的使用并行反而会降低程序的效率
 
+#### Define Your Application’s Expected Behavior
+
+#### Factor Out Executable Units of Work
+
+#### Identify the Queues You Need
+
+dispatch queue：并行和串行
+
+operation objects：添加依赖
+
+#### Tips for Improving Efficiency
+
+* 考虑到内存使用时，在任务中直接计算结果，不去内存加载	
+
+	Identify serial tasks early and do what you can to make them more concurrent
+
+	Avoid using locks
+
+	Rely on the system frameworks whenever possible
+
 ## Performance Implications
 
 ## Concurrency and Other Technologies
