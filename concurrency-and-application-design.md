@@ -62,13 +62,15 @@ operation objects：添加依赖
 
 #### Tips for Improving Efficiency
 
-* 考虑到内存使用时，在任务中直接计算结果，不去内存加载	
+* 考虑到内存使用时，在任务中直接计算结果，不去内存加载
 
-	Identify serial tasks early and do what you can to make them more concurrent
+* 尽量把串行的任务并行
 
-	Avoid using locks
+* Identify serial tasks early and do what you can to make them more concurrent
 
-	Rely on the system frameworks whenever possible
+  Avoid using locks
+
+  Rely on the system frameworks whenever possible
 
 ## Performance Implications
 
