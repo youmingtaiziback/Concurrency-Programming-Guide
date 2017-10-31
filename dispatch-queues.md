@@ -117,9 +117,16 @@ dispatch\_suspend/dispatch\_resume
 
 ## Waiting on Groups of Queued Tasks
 
+dispatch\_group\_async
+
+dispatch\_group\_wait
+
 ## Dispatch Queues and Thread Safety
 
-## 
+* Dispatch queues本身是线程安全的
+* dispatch\_sync可能引发的死锁问题
+* 尽量避免在dispatch Queue的任务中使用锁
+* 尽量不去访问执行任务的线程信息
 
 
 
