@@ -93,7 +93,7 @@ completionBlock
 
 #### Managing Memory in Operation Objects
 
-避免基于线程存储数据
+避免将数据与线程关联
 
 ```
 Keep References to Your Operation Object As Needed
