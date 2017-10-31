@@ -95,9 +95,9 @@ completionBlock
 
 避免将数据与线程关联
 
-```
-Keep References to Your Operation Object As Needed
-```
+保留对Operation对象的引用
+
+
 
 #### Handling Errors and Exceptions
 
