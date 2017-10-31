@@ -100,7 +100,20 @@ dispatch\_get\_main\_queue
 
 ## Suspending and Resuming Queues
 
+dispatch\_suspend/dispatch\_resume
+
+将队列挂起只会影响尚未执行的block，对已经执行的block没有影响
+
 ## Using Dispatch Semaphores to Regulate the Use of Finite Resources
+
+只有在资源不可用时才会调用内核
+
+使用dispatch semaphore的步骤
+
+* dispatch\_semaphore\_create，参数代表资源个数
+* 每个任务里面调用dispatch\_semaphore\_wait 
+* 等待结束后，获取资源完成任务
+* 任务结束后释放资源dispatch\_semaphore\_signal
 
 ## Waiting on Groups of Queued Tasks
 
