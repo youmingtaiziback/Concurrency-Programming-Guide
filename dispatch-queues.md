@@ -20,6 +20,12 @@ dispatch queues的其他特点
 
 ## Queue-Related Technologies
 
+| Technology | Description |
+| :--- | :--- |
+| Dispatch groups | 监听一组block对象执行完毕 |
+| Dispatch semaphores |  |
+| Dispatch sources |  |
+
 ## Implementing Tasks Using Blocks
 
 ## Creating and Managing Dispatch Queues
