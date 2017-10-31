@@ -42,6 +42,36 @@ block可以访问作用域内的变量
 
 ## Creating and Managing Dispatch Queues
 
+#### Getting the Global Concurrent Dispatch Queues
+
+dispatch\_get\_global\_queue
+
+#### Creating Serial Dispatch Queues
+
+只要将任务异步添加到Queue中就不会导致死锁
+
+需要自己创建，dispatch\_queue\_create\("com.example.MyQueue", NULL\)
+
+#### Getting Common Queues at Runtime
+
+* dispatch\_get\_current\_queue
+* dispatch\_get\_main\_queue
+* dispatch\_get\_global\_queue
+
+#### Memory Management for Dispatch Queues
+
+对全局的dispatch queue执行retain和release将被忽略
+
+内存回收对dispatch objects无效
+
+#### Storing Custom Context Information with a Queue
+
+对dispatch objects可以设置自定义数据：dispatch\_set\_context、dispatch\_get\_context
+
+#### Providing a Clean Up Function For a Queue
+
+dispatch\_set\_finalizer\_f
+
 ## Adding Tasks to a Queue
 
 ## Suspending and Resuming Queues
