@@ -10,6 +10,25 @@ GCD把线程管理的任务交给了系统内核
 
 Operation Queue负责线程管理、执行异步任务
 
+#### Dispatch Queues
+
+基于C语言，先进先出的串行或者并行执行任务
+
+Dispatch queues其他优势
+
+* 接口简单
+* 提供自动的整体的线程池管理
+* 通过优化提升速度
+* 更高效的使用内存，因为线程栈不在应用内存空间
+* 不中断内核
+* 向队列中异步分发任务不会导致队列死锁
+* 根据系统负载情况动态调整
+* 线性队列高效的替代了锁和其他同步机制
+
+#### Dispatch Sources
+
+#### Operation Queues
+
 ## Asynchronous Design Techniques
 
 ## Performance Implications
