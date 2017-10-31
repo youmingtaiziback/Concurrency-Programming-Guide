@@ -2,15 +2,24 @@
 
 ## About Dispatch Sources
 
-##  Creating Dispatch Sources
+GCD支持的dispatch source类型
 
-##  Dispatch Source Examples
+* timer
+* singal：a UNIX signal arrives
+* Descriptor：file- and socket-based operations
+* Process
+* Mach port
+* Custom
 
-##  Canceling a Dispatch Source
+## Creating Dispatch Sources
 
-##  Suspending and Resuming Dispatch Sources
+## Dispatch Source Examples
 
-##  
+## Canceling a Dispatch Source
+
+## Suspending and Resuming Dispatch Sources
+
+## 
 
 
 
