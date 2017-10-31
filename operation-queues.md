@@ -32,6 +32,54 @@ Operation加入到Queue中，默认是并行的
 
 ## Defining a Custom Operation Object
 
+#### Performing the Main Task
+
+* \(required\)A custom initialization method
+* \(required\)main
+* \(optional\)main方法里面调用的其他方法
+* \(optional\)访问器方法
+* \(optional\)NSCoding
+
+#### Responding to Cancellation Events
+
+被cancel的线程还需要自己进行检测
+
+应该调用isCancelled的情况：实际任务之前、每次循环、容易退出的位置
+
+#### Configuring Operations for Concurrent Execution
+
+并行Operation需要覆盖的方法
+
+		start\(Required\) 
+
+		main\(Optional\) 
+
+		isExecuting\(Required\) 
+
+		isFinished\(Required\) 
+
+		isConcurrent\(Required\) 
+
+被cancel的线程也需要更新finish状态
+
+#### Maintaining KVO Compliance
+
+	isCancelled
+
+	isConcurrent
+
+	isExecuting
+
+	isFinished
+
+	isReady
+
+	dependencies
+
+	queuePriority
+
+	completionBlock
+
 ## Customizing the Execution Behavior of an Operation Object
 
 ## Tips for Implementing Operation Objects
