@@ -28,6 +28,8 @@ Operation加入到Queue中，默认是并行的
 
 ## Creating an NSBlockOperation Object
 
+该Operation包含了一个或多个block，执行时，它将这些block放进默认优先级的concurrent dispatch queue，当所有的block都执行完时，将自己置为结束
+
 ## Defining a Custom Operation Object
 
 ## Customizing the Execution Behavior of an Operation Object
