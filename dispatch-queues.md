@@ -24,7 +24,7 @@ dispatch queues的其他特点
 | :--- | :--- |
 | Dispatch groups | 监听一组block对象执行完毕 |
 | Dispatch semaphores | 只有信号量不可用时，才调用内核 |
-| Dispatch sources |  |
+| Dispatch sources | 当特定的系统事件发生时，dispatch source把任务代码异步的添加到指定队列 |
 
 ## Implementing Tasks Using Blocks
 
