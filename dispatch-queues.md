@@ -78,9 +78,9 @@ dispatch\_set\_finalizer\_f
 
 #### Adding a Single Task to a Queue
 
-	无法得知任务何时开始
+无法得知任务何时开始
 
-	在线性队列的任务中调用dispatch\_sync导致死锁的情况
+在线性队列的任务中调用dispatch\_sync导致死锁的情况
 
 #### Performing a Completion Block When a Task Is Done
 
