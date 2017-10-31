@@ -97,15 +97,39 @@ completionBlock
 
 保留对Operation对象的引用
 
-
-
 #### Handling Errors and Exceptions
 
 ## Determining an Appropriate Scope for Operation Objects
 
+寻找线程数量和每一个线程任务量之间的平衡，如果有很多的Operation，应该分批添加到Queue中以避免过度消耗内存
+
 ## Executing Operations
 
-## 
+#### Adding Operations to an Operation Queue
+
+添加任务的方式
+
+* \[aQueue addOperation:anOp\]
+* \[aQueue addOperations:anArrayOfOps waitUntilFinished:NO\]
+* \[aQueue addOperationWithBlock:^{}\];
+
+#### Executing Operations Manually
+
+	手动执行Operation时应该调用start而不是main，因为前者会进行安全检查并发送KVO通知
+
+#### Canceling Operations
+
+	\[NSOperation cancel\]
+
+	\[queue cancelAllOperations\]
+
+#### Waiting for Operations to Finish
+
+	\[NSOperation waitUntilFinished\]
+
+	\[NSOperationQueue waitUntilAllOperationsAreFinished\]
+
+#### Suspending and Resuming Queues
 
 
 
