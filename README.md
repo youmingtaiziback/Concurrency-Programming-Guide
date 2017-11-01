@@ -16,5 +16,5 @@
 
 ## See Also
 
-[_Threading Programming Guide_](https://www.gitbook.com/book/youmingtaiziback/threading-programming-guide/details)
+[_Threading Programming Guide_](https://youmingtaiziback.gitbooks.io/threading-programming-guide/content/)
 
